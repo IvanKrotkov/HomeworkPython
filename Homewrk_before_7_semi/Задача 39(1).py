@@ -28,7 +28,7 @@ while candys > 0:
         candys = candys - z
         if candys >= 193:
             if candys%29 == 0:
-                r = random.randint(0,29)
+                r = random.randint(1,29)
                 print(f'Твой оппонент взял {r} конфет')
                 candys = candys - r
                 print(f'Конфет осталось {candys}')
