@@ -1,3 +1,4 @@
+import input_date as id
 
 def AddDictNameAndSubAndMark(dicthy,nems):
     subsAndMark = dicthy
@@ -9,7 +10,12 @@ def AddDictNameAndSubAndMark(dicthy,nems):
         nameAndSubAndMark[i] = dict(subsAndMark.items())
     return nameAndSubAndMark
         
-
-def AddDictSubAndMark(subs,marks):
-    subAndMark = {i : marks for i in subs}
+def AddDictSubAndMark(subs):
+    subAndMark = {i : id.InitMark() for i in subs}
     return subAndMark
+
+
+def AddDictSubAndMarkRandom(subs):
+    subAndMark = {i : id.RandomMarks() for i in subs}
+    return subAndMark
+
